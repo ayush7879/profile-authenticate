@@ -4,9 +4,12 @@ import About from "./pages/About"
 import SignUp from "./pages/SignUp"
 import SignIn from "./pages/SignIn"
 import Profile from "./pages/Profile"
+import Header from "./components/Header"
+
 export default function App() {
   return (
     <BrowserRouter>
+    <Header/>
 <Routes>
   <Route path="/" element={ <Home/>} />
   <Route path="/about" element={ <About/>} />
@@ -16,6 +19,6 @@ export default function App() {
 
 </Routes>
     </BrowserRouter>
-    // <div className='text-red-600'>App</div>
+
   )
 }
